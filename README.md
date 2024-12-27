@@ -14,8 +14,7 @@ Star Wars Searcher es un simple buscador basado en la utilización de la api de 
 | ------- |  ----- |
 | JavaScript | Vue Router  |
 | Vue 3 | SWAPI Api  |
-| Typescript |   |
-| Tailwind |   |
+| Typescript | Tailwind  |
 
 <br> <br>
 <br> 
@@ -29,6 +28,10 @@ Star Wars Searcher es un simple buscador basado en la utilización de la api de 
 <img src="https://res.cloudinary.com/dfbloaduq/image/upload/v1735258458/Screenshot_2024-12-27_at_01.09.56_fnndwf.webp">
 <br>
 
-### Personajes
+### ¡Wookiee!
+<img src="https://res.cloudinary.com/dfbloaduq/image/upload/v1735259613/Screenshot_2024-12-27_at_01.33.07_1_vrc04d.webp">
+<br>
+
+### Personas
 <img src="https://res.cloudinary.com/dfbloaduq/image/upload/v1735258474/Screenshot_2024-12-27_at_01.09.39_yszgcs.webp">
 <br>
