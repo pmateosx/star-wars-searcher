@@ -20,22 +20,18 @@ const wookieeToEnglishMap: { [key: string]: string } = {
 };
 
 export function translateWookieeData(data: any): any {
-    console.log('execute translateWookieeData', data);
-    
     if (Array.isArray(data)) {
-        console.log("TRANSFORM 1", data);
         return data.map((item) => translateWookieeData(item));
     } else if (typeof data === "object" && data !== null) {
         const translatedData: { [key: string]: any } = {};
         for (const key in data) {
             const translatedKey = wookieeToEnglishMap[key] || key;
             if (translatedKey === "results") {
-                translatedData[translatedKey] = data[key].map((item) => translateWookieeData(item));
+                translatedData[translatedKey] = data[key].map((item: any) => translateWookieeData(item));
             } else {
                 translatedData[translatedKey] = data[key];
             }
         }
-        console.log("TRANSFORM 3", translatedData);
         return translatedData;
     }
     return data;

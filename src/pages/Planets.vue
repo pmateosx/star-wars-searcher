@@ -23,7 +23,6 @@ const getWookiees = () => {
 onMounted(() => {
     fetchPlanetsPage(currentPage.value);
     getWookiees();
-    console.log(wookiees.data);
 });
 
 const handleNewPage = (page: number) => {
