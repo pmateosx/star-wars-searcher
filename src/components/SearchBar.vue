@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, defineEmits } from "vue";
+import { ref, defineEmits, watch } from "vue";
 
 const emits = defineEmits(["search"]);
 const searchTerm = ref("");
@@ -12,6 +12,8 @@ const emitSearch = () => {
     }
     emits("search", params);
 };
+
+watch(() => includeWookiee.value, () => emitSearch());
 
 </script>
 
