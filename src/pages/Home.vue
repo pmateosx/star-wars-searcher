@@ -25,7 +25,7 @@ import { RouterLink } from "vue-router";
 
         <RouterLink
             :to="'/people'"
-            class="mt-8 text-sm w-full border-neutral-600 border bg-neutral-700 text-white text-center py-1 px-4 rounded-full max-w-[300px]"
+            class="mt-8 text-sm w-full border-neutral-600 border bg-neutral-700 text-white text-center py-1 px-4 rounded-full max-w-[300px] hover:bg-neutral-800"
             >Comenzar
         </RouterLink>
     </section>
