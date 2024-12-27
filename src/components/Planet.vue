@@ -15,6 +15,12 @@ const checkWookiee = () => {
         });
     }
 };
+const planetsImages = [
+    "https://res.cloudinary.com/dfbloaduq/image/upload/v1735259265/planet-1_rqrmni.webp",
+    "https://res.cloudinary.com/dfbloaduq/image/upload/v1735259264/planet-2_z7oezo.webp",
+    "https://res.cloudinary.com/dfbloaduq/image/upload/v1735259265/planet-3_sm18n0.webp",
+    "https://res.cloudinary.com/dfbloaduq/image/upload/v1735259253/planet-4_f8brwl.webp",
+]
 </script>
 
 <template>
@@ -24,7 +30,7 @@ const checkWookiee = () => {
         >
             <img
                 class="object-contain h-[200px] w-full rounded-lg"
-                :src="`src/assets/planets/planet-${getRandomNumber()}.webp`"
+                :src="planetsImages[getRandomNumber() - 1]"
                 alt=""
             />
         </div>
